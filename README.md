@@ -59,7 +59,7 @@ export default App;
 
 ## Note
 
-This package should not yet be used on production or a large scale app because the tests have not been written.
+Tests have not yet been completed.
 
 ## Contributing
 
@@ -84,4 +84,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Todo
 
-- Write test
+- Write tests
