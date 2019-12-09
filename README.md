@@ -27,39 +27,37 @@ yarn add react-payant
 ### Usage
 
 ```javascript
-import React, { Component } from 'react';
+import React, { Component } from "react";
 //import the library
-import Payant from 'react-payant';
+import Payant from "react-payant";
 
 function App() {
-  <Payant
-    payantPublicKey={'<Your payant public key>'}
-    client={{
-      first_name: 'Albert',
-      last_name: 'Jane',
-      email: 'jane@alberthospital.com',
-      phone: '+2348012345678',
-    }}
-    due_date="12/30/2016"
-    fee_bearer="client"
-    items={[
-      {
-        item: '.Com Domain Name Registration',
-        description: 'alberthostpital.com',
-        unit_cost: '2500.00',
-        quantity: '1',
-      },
-    ]}
-    callback={(response) => console.log(response)}
-    close={() => console.log('closed')}
-  />;
+  return (
+    <Payant
+      payantPublicKey={"<Your payant public key>"}
+      client={{
+        first_name: "Albert",
+        last_name: "Jane",
+        email: "jane@alberthospital.com",
+        phone: "+2348012345678"
+      }}
+      due_date="12/30/2016"
+      fee_bearer="client"
+      items={[
+        {
+          item: ".Com Domain Name Registration",
+          description: "alberthostpital.com",
+          unit_cost: "2500.00",
+          quantity: "1"
+        }
+      ]}
+      callback={response => console.log(response)}
+      close={() => console.log("closed")}
+    />
+  );
 }
 export default App;
 ```
-
-## Note
-
-Tests have not yet been completed.
 
 ## Contributing
 
