@@ -1,6 +1,6 @@
 {
   "name": "react-payant",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react component for Payant inline Js",
   "main": "dist/payant.min.js",
   "scripts": {
